@@ -151,6 +151,21 @@ h3 {
   top: 30px;
 }
 
+.side-menu-link {
+  font-weight: bold;
+}
+
+i {
+  display: inline-block;
+  width: 1.2em;
+  height: 1.2em;
+  text-align: center;
+}
+
+span {
+  margin-left: 26px;
+}
+
 .bg {
   background: #F1F1F1;
 }
@@ -263,17 +278,17 @@ h3 {
 
 @media only screen and (max-width: 1000px) {
   #wrapper {
-    font-size: 16px;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
-  .lefttopmenu {
-    font-size: 16px;
+  .side-menu {
     display: none;
   }
-  .lefttopmenu.visible {
+  .side-menu.visible {
     display: block;
     position: fixed;
+    width: 240px;
+    min-height: 100vh;
   }
 }
 

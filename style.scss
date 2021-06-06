@@ -126,7 +126,7 @@ h3 {
     top: 30px;
 }
 
-&__link {
+.side-menu-link {
   font-weight: bold;
 }
 
@@ -237,20 +237,20 @@ iframe {
     }
   }
 
-  @media only screen and (max-width: 1000px){
-    #wrapper{
+  @media only screen and (max-width: 1000px) {
+    #wrapper {
       grid-template-columns: 1fr;
     }
-    .side-menu{
+    .side-menu {
       display: none;
+  
+      &.visible {
+        display: block;
+        position: fixed;
+        width: 240px;
+        min-height: 100vh;
+      }
     }
-    .side-menu.visible{
-      display: block;
-      position: fixed;
-      width: 240px;
-    }
-
-    
   }
    
 
