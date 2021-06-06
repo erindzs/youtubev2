@@ -1,0 +1,279 @@
+
+$accent_color: #ee4343;
+@mixin iconSize {
+  width: 1.2em;
+  height: 1.2em;
+}
+
+
+@function pxToEm($size_px, $font_size) {
+    @return $size_px/$font_size + 0em;
+  }
+
+  body {
+    margin: 0;
+    background: #fff;
+  }
+
+  #wrapper {
+  
+    display: grid;
+    grid-template-columns: 240px 1fr;
+}
+
+.topnav{
+    background: #fff;
+    height: 30px;
+    position: fixed;
+    top: 8;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topnav  .search {
+    position: relative;
+    align-items: center;
+    border-right: none;
+    border-radius: 2px 0 0 2px;
+    padding: 2px 6px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+   .topnav .rightmenu {
+
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    justify-content: space-around;
+
+}
+
+.side-menu{
+    a{
+        position: relative;
+        top: 35px;
+        display: flex;
+        align-items: flex-start;
+        display: inline-block;
+        text-decoration: none;
+        color: #606060;
+        padding: 5px;
+        font-size: 18px;
+        width: 100%;
+        box-sizing: border-box;
+        
+    }
+}
+.side-menu{
+     width: 240px;
+}
+
+.side-menu i {
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    text-align: center;
+}
+
+.side-menu span {
+    margin-left: 20px;
+}
+
+.side-menu a:hover{
+    color: #ee4343;
+    background: grey;
+}
+h3 {
+    display: block;
+    padding: 8px 24px;
+    font-size: 18px;
+  }
+
+.SUB{
+    display: flex;
+    align-items: flex-start;
+    display: inline-block;
+    text-decoration: none;
+    color: #111111;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    top: 30px;
+}
+
+.morefromyoutube{
+    display: flex;
+    align-items: flex-start;
+    display: inline-block;
+    text-decoration: none;
+    color: #111111;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+     white-space: nowrap;
+    position: relative;
+    top: 30px;
+}
+
+&__link {
+  font-weight: bold;
+}
+
+i {
+  display: inline-block;
+  @include iconSize;
+  text-align: center;
+}
+
+span {
+  margin-left: 26px;
+}
+
+
+.bg {
+    background: #F1F1F1;
+  }
+  
+    .cover-img {
+      height: 196px;
+      background: url(media/mountains.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+  
+    #midnav{
+      position: relative;
+      height: 148px;
+      top: 195px;
+      background: #F9F9F9
+    }
+  
+    .firstmid {
+      width: 100%;
+      position: absolute;
+      top: 30px ;
+      display: flex;
+      flex-direction: row;
+      left: 105px;
+      align-items: center;
+      
+  
+    }
+    
+   
+  
+  .profilename {
+    width: 100%;
+    position: absolute;
+    left: 220px;
+    top: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: inherit;
+    line-height: 0.5;
+    
+  
+  }
+  
+  
+  
+  .subbutton {
+    background-color: #BC271A;
+    border: none;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    position: absolute;
+    display: flex;
+    flex-direction: row-reverse;
+    right: 100px;
+    top: 45px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+    .secondmid {
+      width: 100%;
+      position: absolute;
+      top: 125px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      font-size: 20px;
+      color: grey;
+     
+      
+    }
+  .preview {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 350px;
+    padding: 0 69px;
+iframe {
+  
+  font-size: 20px;
+  width: pxToEm(424, 20);
+  height: pxToEm(238,20);
+}
+    &__text{
+      font-size: 18px;
+      padding: 0px 24px;
+      max-width: 359px;
+    }
+  }
+
+  @media only screen and (max-width: 1000px){
+    #wrapper{
+      grid-template-columns: 1fr;
+    }
+    .side-menu{
+      display: none;
+    }
+    .side-menu.visible{
+      display: block;
+      position: fixed;
+      width: 240px;
+    }
+
+    
+  }
+   
+
+
+
+  @media only screen and (max-width: 600px)
+  {
+    .profilename{
+      padding: 0 20px ;
+    }
+
+    .preview {
+      padding: 0 20px;
+
+      iframe{
+        font-size: 4.25vw;
+      }
+      }
+    }
+
+    .preview2 {
+      background-color: yellow;
+     
+      
+    
+    }
