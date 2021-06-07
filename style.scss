@@ -13,6 +13,7 @@ $accent_color: #ee4343;
   body {
     margin: 0;
     background: #fff;
+    font-family: Roboto;
   }
 
   #wrapper {
@@ -145,6 +146,24 @@ span {
     background: #F1F1F1;
   }
   
+  #wrapper.visible-side-menu {
+    font-size: 16px;
+    grid-template-columns: 72px 1fr;
+
+    .side-menu {
+      font-size: 17px;
+      a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      span {
+        font-size: 11px;
+        margin: 0;
+      }
+    }
+  }
+
     .cover-img {
       height: 196px;
       background: url(media/mountains.jpg);
@@ -231,7 +250,7 @@ iframe {
   @media only screen and (max-width: 1000px) {
     #wrapper {
       font-size: 16px;
-      grid-template-columns: 72px 1fr;
+      //grid-template-columns: 72px 1fr;
   
       .side-menu {
         font-size: 17px;

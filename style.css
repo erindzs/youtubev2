@@ -1,6 +1,7 @@
 body {
   margin: 0;
   background: #fff;
+  font-family: Roboto;
 }
 
 #wrapper {
@@ -168,6 +169,34 @@ span {
   background: #F1F1F1;
 }
 
+#wrapper.visible-side-menu {
+  font-size: 16px;
+  -ms-grid-columns: 72px 1fr;
+      grid-template-columns: 72px 1fr;
+}
+
+#wrapper.visible-side-menu .side-menu {
+  font-size: 17px;
+}
+
+#wrapper.visible-side-menu .side-menu a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#wrapper.visible-side-menu .side-menu span {
+  font-size: 11px;
+  margin: 0;
+}
+
 .cover-img {
   height: 196px;
   background: url(media/mountains.jpg);
@@ -267,8 +296,6 @@ span {
 @media only screen and (max-width: 1000px) {
   #wrapper {
     font-size: 16px;
-    -ms-grid-columns: 72px 1fr;
-        grid-template-columns: 72px 1fr;
   }
   #wrapper .side-menu {
     font-size: 17px;
