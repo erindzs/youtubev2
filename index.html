@@ -9,7 +9,7 @@
 
  <nav class="topnav"> 
      <div class="lefttopmenu">
-         <a href="#"style="margin: auto 0;" onclick="document.querySelector('.side-menu').classList.toggle('visible')"><img src="media/LeftMenu.svg" alt="LeftMenu"> </a>
+         <a href="#"style="margin: auto 0;" onclick="document.querySelector('#wrapper').classList.toggle('visible-side-menu')"><img src="media/LeftMenu.svg" alt="LeftMenu"> </a>
          <a href="#"><img src="media/Youtube.svg" alt="Youtube"> </a>
      </div>
      <div class="search" style="display: flex; flex-grow: 1;" >
@@ -37,7 +37,7 @@
  </nav>
  
  <div id="wrapper">
- <div class="side-menu" style="margin: 30px;">
+ <div class="side-menu " style="margin-top: 30px;">
     <a href="#" class="side-menu-link" >
     <i class="icon-Home">
     </i>
@@ -164,6 +164,8 @@
     </i>
 <span>Send-feedback</span>
 </a>
+
+
      </div>
  
      <main class="bg">
@@ -172,22 +174,15 @@
               <div class="firstmid">
                 <a href="#">
                   <img  src="media/profile.svg" alt=""></a>
-                
               </div>
               <div class="profilename">
                 <a href="#"style="text-decoration: none; color:inherit  "><h2>Profile</h2></a>
                 <span style="color: grey;">23.9 M subscribers</span>
-                <a class="subbutton" href="#" style="text-decoration: none; color: white; margin:auto; ">
-                    SUBSCRIBE
-                  </a>
-                  
-                 
               </div>
               <div>
-              
-                
-                
-                
+                <a class="subbutton" href="#" style="text-decoration: none; color: white;  ">
+                    SUBSCRIBE
+                  </a>
               </div>
               <div class="secondmid">
                 <a href="#"style="text-decoration: none; color:inherit ">HOME</a>

@@ -210,6 +210,7 @@ span {
       
     }
   .preview {
+    margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
     
@@ -229,21 +230,40 @@ iframe {
 
   @media only screen and (max-width: 1000px) {
     #wrapper {
-      grid-template-columns: 1fr;
-    }
-    .side-menu {
-      display: none;
+      font-size: 16px;
+      grid-template-columns: 72px 1fr;
   
-      &.visible {
-      
-        display: block;
-        
-        width: 240px;
-        min-height: 100vh;
+      .side-menu {
+        font-size: 17px;
+        a {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        span {
+          font-size: 11px;
+          margin: 0;
+        }
+      }
+    }
+  
+    #wrapper.visible-side-menu {
+      grid-template-columns: 240px 1fr;
+  
+      .side-menu {
+        font-size: 20px;
+  
+        a {
+          display: inline-block;
+        }
+        span {
+          font-size: 1em;
+          margin-left: 26px;
+        }
       }
     }
   }
-   
+
 
 
 
