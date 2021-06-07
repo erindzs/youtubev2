@@ -34,7 +34,7 @@ $accent_color: #ee4343;
 }
 
 .topnav  .search {
-    position: relative;
+    
     align-items: center;
     border-right: none;
     border-radius: 2px 0 0 2px;
@@ -55,10 +55,11 @@ $accent_color: #ee4343;
 
 .side-menu{
     a{
-        position: relative;
-        top: 35px;
+      
+       
         display: flex;
-        align-items: flex-start;
+        flex-direction: column;
+        align-items: flex-end;
         display: inline-block;
         text-decoration: none;
         color: #606060;
@@ -95,6 +96,7 @@ h3 {
   }
 
 .SUB{
+  margin: 5px;
     display: flex;
     align-items: flex-start;
     display: inline-block;
@@ -105,8 +107,7 @@ h3 {
     font-weight: bold;
     width: 100%;
     box-sizing: border-box;
-    position: relative;
-    top: 30px;
+    
 }
 
 .morefromyoutube{
@@ -122,8 +123,7 @@ h3 {
     box-sizing: border-box;
     display: inline-block;
      white-space: nowrap;
-    position: relative;
-    top: 30px;
+    
 }
 
 .side-menu-link {
@@ -161,8 +161,7 @@ span {
   
     .firstmid {
       width: 100%;
-      position: absolute;
-      top: 30px ;
+
       display: flex;
       flex-direction: row;
       left: 105px;
@@ -170,14 +169,8 @@ span {
       
   
     }
-    
-   
-  
   .profilename {
     width: 100%;
-    position: absolute;
-    left: 220px;
-    top: 20px;
     font-size: 20px;
     text-decoration: none;
     color: inherit;
@@ -188,28 +181,26 @@ span {
   
   
   
+  
   .subbutton {
     background-color: #BC271A;
     border: none;
     padding: 12px 20px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-self:center;
+    text-align: right;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
-    position: absolute;
-    display: flex;
-    flex-direction: row-reverse;
-    right: 100px;
-    top: 45px;
     border-radius: 5px;
     font-weight: bold;
   }
   
     .secondmid {
       width: 100%;
-      position: absolute;
-      top: 125px;
+      
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
@@ -221,8 +212,7 @@ span {
   .preview {
     display: flex;
     flex-wrap: wrap;
-    position: absolute;
-    top: 350px;
+    
     padding: 0 69px;
 iframe {
   
@@ -245,8 +235,9 @@ iframe {
       display: none;
   
       &.visible {
+      
         display: block;
-        position: fixed;
+        
         width: 240px;
         min-height: 100vh;
       }

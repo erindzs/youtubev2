@@ -32,7 +32,6 @@ body {
 }
 
 .topnav .search {
-  position: relative;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -65,14 +64,16 @@ body {
 }
 
 .side-menu a {
-  position: relative;
-  top: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   display: inline-block;
   text-decoration: none;
   color: #606060;
@@ -110,6 +111,7 @@ h3 {
 }
 
 .SUB {
+  margin: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -125,8 +127,6 @@ h3 {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  position: relative;
-  top: 30px;
 }
 
 .morefromyoutube {
@@ -147,8 +147,6 @@ h3 {
           box-sizing: border-box;
   display: inline-block;
   white-space: nowrap;
-  position: relative;
-  top: 30px;
 }
 
 .side-menu-link {
@@ -186,8 +184,6 @@ span {
 
 .firstmid {
   width: 100%;
-  position: absolute;
-  top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -203,9 +199,6 @@ span {
 
 .profilename {
   width: 100%;
-  position: absolute;
-  left: 220px;
-  top: 20px;
   font-size: 20px;
   text-decoration: none;
   color: inherit;
@@ -216,29 +209,25 @@ span {
   background-color: #BC271A;
   border: none;
   padding: 12px 20px;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-item-align: center;
+      align-self: center;
+  text-align: right;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  right: 100px;
-  top: 45px;
   border-radius: 5px;
   font-weight: bold;
 }
 
 .secondmid {
   width: 100%;
-  position: absolute;
-  top: 125px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -259,8 +248,6 @@ span {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  position: absolute;
-  top: 350px;
   padding: 0 69px;
 }
 
@@ -286,7 +273,6 @@ span {
   }
   .side-menu.visible {
     display: block;
-    position: fixed;
     width: 240px;
     min-height: 100vh;
   }
